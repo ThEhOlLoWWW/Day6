@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let tableau = [{nom: "A", groupe: 1}, {nom: "B", groupe: 2}, {nom: "C", groupe: 1}]
+
+function groupement(tableau){
+    let resultat = {}
+    for (let item of tableau){
+        if ( resultat[item.groupe] === undefined){
+             resultat[item.groupe] = []
+        } 
+            resultat[item.groupe].push({ nom: item.nom });
+        
+    }
+    return resultat;
+}
+console.log(groupement(tableau));
