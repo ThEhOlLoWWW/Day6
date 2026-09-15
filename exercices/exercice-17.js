@@ -14,4 +14,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let priceList = [{ article: "PC", prix: "1500$" }, { article: "Souris", prix: "25$" }];
+
+function vraiNumber(tableau){
+    for (let item of tableau){
+        let prixPropre = item.prix.replace("$","");
+        let prixNum = Number(prixPropre);
+        item.prix = prixNum;
+    }
+    return tableau;
+}
+console.log(vraiNumber(priceList));
