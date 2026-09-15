@@ -14,4 +14,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function possedePropriete(obj, cle){
+    return cle in obj;
+}
+
+
+let utilisateur = {
+    nom: "Younes",
+    age: 21
+};
+
+// 2. Test it with a key that exists
+console.log(possedePropriete(utilisateur, "nom")); // Should output: true
+
+// 3. Test it with a key that DOES NOT exist
+console.log(possedePropriete(utilisateur, "email")); // Should output: false
