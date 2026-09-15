@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let objEntreprise = {nom: "hello", employes: [
+    {nom : "Younes"},
+    {nom: "Sarah"},
+],}
+
+console.log(objEntreprise.employes[1].nom);
