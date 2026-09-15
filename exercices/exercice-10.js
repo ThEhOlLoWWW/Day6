@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let mot = "abracadabra" 
+function fun(mot){
+    mot = mot.split('')
+    let occurrences = {}
+    for (const element of mot) {
+        if (occurrences[element] === undefined){
+            occurrences[element] = 1;
+        } else {
+            occurrences[element]++;
+        }
+    }
+    return occurrences;
+}
+console.log(fun(mot));
