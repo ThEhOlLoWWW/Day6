@@ -9,4 +9,10 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let car = {
+    marque: "Toyota",
+    modèle: "Corolla",
+    ennée: 2020
+};
+console.log(car.marque);
+
