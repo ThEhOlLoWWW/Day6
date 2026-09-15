@@ -8,5 +8,12 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
+let car = {
+    marque: "Toyota",
+    modele: "Corolla",
+    ennée: 2020
+};
 
-// TODO: écris ta solution ici.
+let cleRecherche = "modele";
+console.log(car[cleRecherche]);
+
