@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function reussie(tableau){
+    let arr = []
+    for (let item of tableau){
+        if (item.score >= 10){
+            arr.push(item);
+        }
+    }
+    return arr;
+}
