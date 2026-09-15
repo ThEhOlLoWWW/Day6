@@ -14,4 +14,23 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function sontIdentiques(obj1, obj2){
+    let cle1 = Object.keys(obj1);
+    let cle2 = Object.keys(obj2);
+    if (cle1.length !== cle2.length){
+        return false;
+    }
+    for (let cle of cle1){
+        if (obj1[cle] !== obj2[cle]){
+            return false;
+        }
+    }
+    return true;
+}
+let test1 = { nom: "Sara", age: 22 };
+let test2 = { nom: "Sara", age: 22 };
+let test3 = { nom: "Sara", age: 25 };
+
+console.log(sontIdentiques(test1, test2)); 
+console.log(sontIdentiques(test1, test3)); 
