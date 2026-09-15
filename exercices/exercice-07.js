@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+const arr = [
+    {titre: "LordOfTheMysteries", auteur: "catfish"},
+    {titre: "livre1", auteur: "auteur1"},
+    {titre: "livre2", auteur: "auteur2"},
+]
+console.log(arr[1].titre);
+
