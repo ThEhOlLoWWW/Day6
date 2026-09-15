@@ -21,6 +21,7 @@ let utilisateur = {
     estAdmin: false,
 }
 utilisateur.age++;
+utilisateur.email = "younessafsafi@gmail.com"
 console.log(utilisateur);
 
 
