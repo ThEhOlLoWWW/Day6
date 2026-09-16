@@ -48,15 +48,15 @@ function afficherAnnuaire(){
         
     }
 }
-// 1. CREATE
+
 ajouterUtilisateur("LOGOS", "dryounes2005@gmail.com");
 ajouterUtilisateur("TestUser", "test@youcode.ma");
 ajouterUtilisateur("Fantome", "boo@fantome.com");
 
-// 2. DELETE
-supprimerParId(2); // Snipes TestUser
 
-// 3. DISPLAY
+supprimerParId(2);
+
+
 afficherAnnuaire();
 
 
