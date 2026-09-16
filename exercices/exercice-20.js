@@ -14,4 +14,26 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let player = {
+    name: "LOGOS",
+    lvl: 99,
+    inventory: {
+        weapons: "Sword",
+        armor: "Iron Gloves"
+    }
+
+}
+let playerClone = {...player};
+playerClone.inventory.weapons = "Axe"
+console.log(player);
+console.log(playerClone);
+//le spread operateur {...object} fait seulment un copie superficielle "shallow copie"
+//il cree un vouvel object parent, mais les object imbbrique gardent leur reference memorie
+
+let realPlayerClone = structuredClone(player);
+
+realPlayerClone.inventory.weapons = "Bow"
+
+console.log(realPlayerClone);
+console.log(player);
