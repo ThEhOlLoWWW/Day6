@@ -20,4 +20,43 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+
+let utilisateurs = []
+function ajouterUtilisateur(nom, email){
+    let obj = {
+        nom: nom, 
+        email: email,
+        id: utilisateurs.length + 1,
+    };
+    utilisateurs.push(obj)
+    return obj;
+}
+function trouverParEmail(email){
+    for (let util of utilisateurs){
+        if ( util.email === email ){
+            return util;
+        }
+    }
+    return "didn't find the user"
+}
+function supprimerParId(id){
+   utilisateurs = utilisateurs.filter(util => util.id !== id)
+}
+function afficherAnnuaire(){
+    for (let util of utilisateurs){
+        console.log(`[ID: ${util.id}] ${util.nom} - ${util.email}`);
+        
+    }
+}
+// 1. CREATE
+ajouterUtilisateur("LOGOS", "dryounes2005@gmail.com");
+ajouterUtilisateur("TestUser", "test@youcode.ma");
+ajouterUtilisateur("Fantome", "boo@fantome.com");
+
+// 2. DELETE
+supprimerParId(2); // Snipes TestUser
+
+// 3. DISPLAY
+afficherAnnuaire();
+
+
